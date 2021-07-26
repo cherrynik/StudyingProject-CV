@@ -1,5 +1,3 @@
-[Cмотреть пример](https://ighosta9.github.io/Summary/)
-
 Содержание
 ===
 
