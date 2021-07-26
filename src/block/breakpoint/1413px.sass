@@ -1,0 +1,55 @@
+@media (max-width: 1413px)
+	.page
+		flex-direction: column
+		align-items: center
+
+		&__col-left,
+		&__col-right
+			width: 70%
+			margin: 0
+			margin-bottom: 1.9em
+			
+			.profile,
+			.contact,
+			.skills,
+			.education,
+			.experience
+				margin-bottom: 5em
+
+		&__col-left
+			.contact
+				display: flex
+				flex-direction: column
+
+			.skills
+				.skill-points
+					width: 46%
+
+					.elem__circle-block
+						height: 2em
+						background-color: lightgray
+
+						.circle
+							display: none 
+
+					.elem__progress-bar
+						display: block
+						background-color: $default-color
+
+		&__col-right
+			.education,
+			.experience
+				.item-list
+					.item
+						&::before
+							content: '' 
+							margin: .75em 1em 0 0
+
+						&__title
+							&::after
+								display: block
+								font-size: .637em
+								
+					.item
+						.item-text
+							margin-left: 0em

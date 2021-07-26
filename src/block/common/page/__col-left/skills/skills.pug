@@ -1,0 +1,16 @@
+mixin circles(title, x)
+	- const MAX = 12
+	- const PERCENTAGE = 100 / MAX * x
+
+	.skill-points__elem
+		h1.elem__title= title
+		.elem__circle-block
+			- for (let i = 0; i < x; ++i) {
+				.circle.circle_colored
+			- }
+
+			- for (let i = 0; i < (MAX - x); ++i) {
+				.circle
+			- }
+
+			.elem__progress-bar(style=`width: ${PERCENTAGE}%`)

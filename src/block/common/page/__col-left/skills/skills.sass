@@ -1,0 +1,36 @@
+.skills
+	display: flex
+	flex-direction: column
+
+	.skill-points
+		width: 78%
+		align-self: center
+
+		&__elem
+			display: flex
+			flex-direction: column
+
+		.elem__title
+			font-family: $light-font
+			align-self: center
+			font-size: 2.25em
+			text-transform: uppercase
+
+		.elem__circle-block
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+
+			.circle
+				height: 1.6em
+				width: 1.6em
+				background-color: $background
+				border-radius: 50%
+
+				&_colored
+					background-color: $default-color
+
+		.elem__progress-bar
+			height: 2em
+			background-color: $second-color
+			display: none

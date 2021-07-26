@@ -1,0 +1,51 @@
+.education
+	.item-list
+		padding-left: 1.188em
+
+.experience
+	.item-list
+		.item
+			list-style: none
+
+			&__title
+				color: $second-color
+
+			
+.education,
+.experience
+	.item
+		list-style: none
+
+		&::before
+			display: inline-block
+			float: left
+			height: 1.813em
+			width: 1.813em
+			border-radius: 50%
+			background-color: $second-color
+			content: ''
+			margin: .75em 2.063em 0 0
+
+		&__title
+			color: $default-color
+			font-family: $bold-font
+			font-size: 2.475em
+			line-height: 1.45em
+			text-transform: uppercase
+
+			&::after
+				content: '// Feb 2011 - Jun 2014'
+				font-family: $light-font
+				color: $second-color
+				font-size: .937em
+				text-transform: capitalize
+	
+	.item-text
+		.item__subtitle
+			font-family: $light-font
+			font-size: 2.375em
+			text-transform: uppercase
+
+		.item__description
+			font-family: $default-font
+			font-size: 1.488em

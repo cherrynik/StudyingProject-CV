@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		title Summary
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(name='theme-color' content='#3D6CB0')
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+		meta(name='description' content=' My key skills at work')
+		meta(name='keywords' content='CV, summary, portfolio, about me, skills, experience, education')
+		meta(name='author' content='Niko Cherednik')
+		meta(name='publisher-email' content='ighosta9@gmail.com')
+		meta(name='robots' content='index, follow')
+	body
+		//- Шапка для блока
+		include block/common/page/heading/heading
+		//- Превью блок
+		include block/common/page/__col-left/preview/preview
+		//- Профиль
+		include block/common/page/__col-left/profile/profile
+		//- Контакты
+		include block/common/page/__col-left/contact/contact
+		//- Скилблок
+		include block/common/page/__col-left/skills/skills
+		//- Образование и опыт работы
+		include block/common/page/__col-right/list/list
+		//- Программное владение
+		include block/common/page/__col-right/software/software
+
+		//- Обёртка страницы
+		include block/common/page/page

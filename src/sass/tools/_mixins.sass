@@ -1,0 +1,10 @@
+// Fonts
+@mixin newFont($name, $style)
+    @font-face
+        font-family: #{$name}-#{$style}
+        src: local('☺'),
+        url('../fonts/#{$name}/#{$style}/#{$name}-#{$style}.eot') format('eot'),
+        url('../fonts/#{$name}/#{$style}/#{$name}-#{$style}.otf') format('otf'),
+        url('../fonts/#{$name}/#{$style}/#{$name}-#{$style}.woff') format('woff'),
+        url('../fonts/#{$name}/#{$style}/#{$name}-#{$style}.ttf') format('truetype'),
+        url('../fonts/#{$name}/#{$style}/#{$name}-#{$style}.svg') format('svg')

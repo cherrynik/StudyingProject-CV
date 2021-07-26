@@ -1,0 +1,67 @@
+//- Обёртка
+.page
+	//- Левая колонка
+	section.page__col-left
+		//- Превью
+		article.preview
+			+preview('name here', 'surname', 'graphic designer')
+
+		//- Профиль
+		article.profile
+			+heading('profile')
+			+profile('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu ', 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.')
+		
+		//- Контакты
+		article.contact
+			+heading('contact')
+			.contact__table
+				+contact('address', 'Main Street, City.')
+				+contact('e-mail', 'contact@domain.com')
+				+contact('phone', '555-555-555')
+				+contact('website', 'www.yourweb.com')
+		
+		//- Умения
+		article.skills
+			+heading('skills')  
+			.skill-points
+				+circles('creative', 9)
+				+circles('teamwork', 11)
+				+circles('innovate', 6)
+				+circles('communication', 11)
+				
+	//- Правая колонка
+	section.page__col-right
+		//- Образование
+		article.education
+			+heading('education')
+			ul.item-list
+				- for (let i = 0; i < 4; i++) {     
+					+list(
+						'master degree',
+						'university name',
+						'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+				- }
+
+		//- Опыт работы
+		article.experience
+			+heading('experience')
+			ul.item-list
+				- for (let i = 0; i < 3; i++) {     
+					+list(
+						'company name',
+						'your job here',
+						'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+				- }
+
+		//- Программное владение
+		article.software
+			+heading('software')
+			.softs
+				.left-softs
+					+software('photoshop', 91)
+					+software('illustrator', 71)
+					+software('indesign', 57)
+				.right-softs
+					+software('dreamweaver', 83)
+					+software('after effects', 61)
+					+software('html&css3', 90)

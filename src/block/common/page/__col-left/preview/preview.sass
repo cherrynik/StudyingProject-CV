@@ -1,0 +1,43 @@
+.preview
+	display: flex
+	flex-direction: column
+	
+	.container
+		display: flex
+		align-items: center
+		justify-content: center
+	
+		.avatar-block
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 22.125em
+			height: 22.125em
+			border-radius: 50%
+			border: .125em solid $default-color
+	
+			.isAvatar
+				width: 19.25em
+				height: 19.25em
+				border-radius: 50%
+				background-color: $default-color
+			
+	.heading
+		display: flex
+		flex-direction: column
+		align-items: center
+		line-height: 4.7em
+		white-space: nowrap
+		text-transform: uppercase
+
+		&__name
+			font-size: 5.1em
+			font-family: $light-font
+
+		&__surname
+			font-size: 5.9em
+			font-family: $bold-font
+
+		&__specialty
+			font-size: 2.45em
+			font-family: $default-font

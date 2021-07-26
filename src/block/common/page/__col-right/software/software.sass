@@ -1,0 +1,28 @@
+.software
+	display: flex
+	flex-direction: column
+	  
+	.softs
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		.left-softs,
+		.right-softs
+			width: 46%
+
+		.block-soft
+			&__title
+				font-family: $light-font
+				text-transform: uppercase
+				font-size: 2.3em
+				line-height: 1.4em
+
+			&__bar
+				height: 2em
+				width: auto
+				background-color: $background
+			
+				&-progress
+					height: 100%
+					background-color: $default-color
